@@ -1,0 +1,190 @@
+/* --- General Styles --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+header h2 {
+    margin: 0;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+td button {
+    background-color: #dc3545;
+}
+td button:hover {
+    background-color: #c82333;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* --- Login Page --- */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-container form input {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+.login-container form button {
+    width: 100%;
+    margin-top: 10px;
+}
+.error {
+    color: #dc3545;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* --- Admin Page --- */
+.tab.hidden {
+    display: none;
+}
+header nav {
+    display: flex;
+    gap: 10px;
+}
+
+/* --- Home Page --- */
+.home-layout {
+    display: flex;
+    gap: 20px;
+}
+.product-list {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+.cart-sidebar {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    align-self: flex-start;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.product-card h4 {
+    margin: 0 0 10px;
+}
+.product-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+.product-card button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cart-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.cart-sidebar li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+.cart-sidebar li button {
+    background-color: #dc3545;
+    font-size: 12px;
+    padding: 3px 8px;
+}
+.cart-sidebar #checkoutBtn {
+    width: 100%;
+    margin-top: 10px;
+}

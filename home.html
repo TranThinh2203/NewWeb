@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h2>Trang chủ người dùng</h2>
+        <button id="logoutBtn">Đăng xuất</button>
+    </header>
+
+    <main class="home-layout">
+        <section id="products" class="product-list"></section>
+
+        <aside id="cart" class="cart-sidebar">
+            <h3>🛒 Giỏ hàng</h3>
+            <ul id="cartList"></ul>
+            <p><strong>Tổng:</strong> <span id="total">0</span> VND</p>
+            <button id="checkoutBtn">Thanh toán</button>
+        </aside>
+    </main>
+
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+
+</html>
+
